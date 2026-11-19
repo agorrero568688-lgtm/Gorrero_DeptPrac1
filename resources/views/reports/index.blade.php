@@ -23,8 +23,6 @@
         <label for="report_type" class="form-label">Report</label>
         <select name="report_type" id="report_type" class="form-select">
             <option value="all" {{ request('report_type', 'all') === 'all' ? 'selected' : '' }}>All plants</option>
-            <option value="in_stock" {{ request('report_type') === 'in_stock' ? 'selected' : '' }}>In stock</option>
-            <option value="out_of_stock" {{ request('report_type') === 'out_of_stock' ? 'selected' : '' }}>Out of stock</option>
             <option value="by_category" {{ request('report_type') === 'by_category' ? 'selected' : '' }}>By category</option>
             <option value="price_list" {{ request('report_type') === 'price_list' ? 'selected' : '' }}>Price list</option>
         </select>
